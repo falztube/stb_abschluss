@@ -32,7 +32,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stb_abschluss.settings')
 SECRET_KEY = 'm&q)orr2a!12vu4#s2vmuiu)lgpsp&^)mz6g4q#g*lr&ar(g-h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -177,5 +177,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 STATICFILES_DIRS = [BASE_DIR, 'stb_abschluss/static']
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # für die Verwendung meherer Datenbanken, siehe db_routers.py
 DATABASE_ROUTERS = ['routers.db_routers.Route_meineDB','routers.db_routers.Route_default']
+
+django_heroku.settings(locals())
