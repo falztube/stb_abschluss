@@ -1,0 +1,1 @@
+web: gunicorn stb_abschluss.wsgi
