@@ -1,0 +1,12 @@
+{% extends 'base2.html'%} 
+{% load static %}
+
+{% load plotly_dash %} 
+{% block content %}
+ 
+    
+<div>   
+    {{ plot1_div | safe }}<!-- | safe muss da stehen wenn ein Plot gerendert werden soll-->
+</div>
+
+{% endblock %}
