@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4', #hinzugefügt
-    'channels', #für bootstrap
-    'channels_redis', #für bootstrap
+    'channels', # auch für bootstrap
+    'channels_redis', # auch für bootstrap
 ]
 
 MIDDLEWARE = [
@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', #für heroku
 ]
 
 ROOT_URLCONF = 'stb_abschluss.urls' 
@@ -177,7 +177,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 STATICFILES_DIRS = [BASE_DIR, 'stb_abschluss/static']
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # für heroku
 
 # für die Verwendung meherer Datenbanken, siehe db_routers.py
 DATABASE_ROUTERS = ['routers.db_routers.Route_meineDB','routers.db_routers.Route_default']
