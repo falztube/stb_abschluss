@@ -1,1 +1,1 @@
-web : gunicorn stb_abschluss.wsgi
+web: gunicorn stb_abschluss.wsgi
