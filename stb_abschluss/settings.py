@@ -29,7 +29,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stb_abschluss.settings')
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = 'm&q)orr2a!12vu4#s2vmuiu)lgpsp&^)mz6g4q#g*lr&ar(g-h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
