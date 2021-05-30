@@ -1,1 +1,1 @@
-web:gunicorn huftrends.wsgi
+web:gunicorn stbabschluss.wsgi
