@@ -34,7 +34,7 @@ SECRET_KEY = 'm&q)orr2a!12vu4#s2vmuiu)lgpsp&^)mz6g4q#g*lr&ar(g-h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://stbabschluss.herokuapp.com']
 
 
 # Application definition
