@@ -21,7 +21,7 @@ from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stb_abschluss.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stbabschluss.settings')
 
 
 
@@ -64,7 +64,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware', #für heroku
 ]
 
-ROOT_URLCONF = 'stb_abschluss.urls' 
+ROOT_URLCONF = 'stbabschluss.urls' 
                                 
 
 TEMPLATES = [
@@ -83,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'stb_abschluss.wsgi.application'
+WSGI_APPLICATION = 'stbabschluss.wsgi.application'
 
 
 # Database
@@ -141,7 +141,7 @@ USE_TZ = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4' # aus youtube tutorial
 
-ASGI_APPLICATION = 'stb_abschluss.routing.application'  # aus youtube tutorial, damit bootstrap läuft
+ASGI_APPLICATION = 'stbabschluss.routing.application'  # aus youtube tutorial, damit bootstrap läuft
 
 CHANNEL_LAYERS = {
     'default': {
@@ -175,7 +175,7 @@ PLOTLY_COMPONENTS = [
 STATICFILES_LOCATION = 'static'
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
-STATICFILES_DIRS = [BASE_DIR, 'stb_abschluss/static']
+STATICFILES_DIRS = [BASE_DIR, 'stbabschluss/static']
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # für heroku
 
