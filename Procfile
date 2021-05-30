@@ -1,1 +1,1 @@
-web: gunicorn stbabschluss.wsgi --log-file
+web: gunicorn stbabschluss.wsgi 
